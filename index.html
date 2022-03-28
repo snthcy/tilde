@@ -31,7 +31,7 @@
     /**
      * The delimiter between the hours, minutes and seconds on the clock.
      */
-    clockDelimiter: ' – ',
+    clockDelimiter: ' ~ ',
 
     /**
      * Show seconds on the clock. A monospaced font is recommended for this.
@@ -60,7 +60,7 @@
     /**
      * Type this to toggle the help menu.
      */
-    helpKey: '?',
+    helpKey: '/',
 
     /**
      * Instantly redirect when a key is matched. Put a space before any other
@@ -71,7 +71,7 @@
     /**
      * Open triggered queries in a new tab.
      */
-    queryNewTab: true,
+    queryNewTab: false,
 
     /**
      * The delimiter between a command key and a path. For example, you'd type
@@ -156,17 +156,12 @@
       {
         key: '*',
         search: '/search?q={}',
-        url: 'https://www.google.com',
+        url: 'https://www.duck.com',
       },
       {
-        key: 'bin',
-        search: '/search?q={}',
-        url: 'https://www.bing.com',
-      },
-      {
-        key: 'ddg',
+        key: 'g',
         search: '/?q={}',
-        url: 'https://duckduckgo.com',
+        url: 'https://google.com',
       },
       {
         key: 'eco',
@@ -174,23 +169,11 @@
         url: 'https://www.ecosia.org',
       },
       {
-        key: 'yah',
-        search: '/search?p={}',
-        url: 'https://search.yahoo.com',
-      },
-      {
         hues: ['0', '0'],
-        key: 'x',
+        key: 'n',
         name: 'Netflix',
         search: '/search?q={}',
         url: 'https://www.netflix.com/browse',
-      },
-      {
-        hues: ['0', '350'],
-        key: 'c',
-        name: 'Calendar',
-        search: '/calendar/u/0/r/search?q={}',
-        url: 'https://calendar.google.com/calendar/u/0/r',
       },
       {
         hues: ['5', '345'],
@@ -200,18 +183,29 @@
         url: 'https://youtube.com/feed/subscriptions',
       },
       {
+        hues: ['5', '345'],
+        key: 'l',
+        name: 'Last',
+        url: 'https://last.fm/',
+      },
+      {
+        hues: ['5', '345'],
+        key: 't',
+        name: 'Trakt',
+        url: 'https://trakt.tv',
+      },
+      {
+        hues: ['5', '345'],
+        key: 'b',
+        name: 'Trakt',
+        url: 'https://trakt.tv',
+      },
+      {
         hues: ['355', '335'],
         key: '=',
         name: 'Wolfram',
         search: '/input/?i={}',
         url: 'https://www.wolframalpha.com',
-      },
-      {
-        hues: ['349', '329'],
-        key: '1',
-        name: 'OPL',
-        search: '/?s={}',
-        url: 'https://onepagelove.com/inspiration',
       },
       {
         hues: ['337', '317'],
@@ -233,6 +227,12 @@
         url: 'https://www.instagram.com',
       },
       {
+        hues: ['230', '280'],
+        key: 'c',
+        name: 'Craft',
+        url: 'https://docs.craft.do/',
+      },
+      {
         hues: ['264', '244'],
         key: 'v',
         name: 'Twitch',
@@ -246,18 +246,6 @@
         url: 'https://www.reddit.com',
       },
       {
-        hues: ['226', '236'],
-        key: 'e',
-        name: 'Disney',
-        url: 'https://www.disneyplus.com/home',
-      },
-      {
-        hues: ['236', '216'],
-        key: 'w',
-        name: 'Webflow',
-        url: 'https://webflow.com/dashboard',
-      },
-      {
         hues: ['214', '234'],
         key: 'g',
         name: 'GitHub',
@@ -265,23 +253,10 @@
         url: 'https://github.com',
       },
       {
-        hues: ['243', '204'],
-        key: 'p',
-        name: 'Plausible',
-        url: 'https://plausible.io',
-      },
-      {
         hues: ['192', '232'],
         key: 'z',
         name: 'Telegram',
         url: 'https://web.telegram.org/z/',
-      },
-      {
-        hues: ['201', '221'],
-        key: 'l',
-        name: 'LinkedIn',
-        search: '/search/results/all/?keywords={}',
-        url: 'https://www.linkedin.com',
       },
       {
         hues: ['198', '218'],
@@ -294,8 +269,7 @@
         hues: ['217', '197'],
         key: 'm',
         name: 'Mail',
-        search: '/mail/u/0/?q={}#search/{}',
-        url: 'https://mail.google.com/mail/u/0',
+        url: 'https://mail.protonmail.com',
       },
       {
         hues: ['203', '183'],
@@ -312,6 +286,12 @@
         url: 'https://www.khanacademy.org',
       },
       {
+        hues: ['166', '146'],
+        key: 'e',
+        name: 'Element',
+        url: 'https://app.element.io',
+      },
+      {
         hues: ['136', '156'],
         key: 'd',
         name: 'Drive',
@@ -326,31 +306,17 @@
         url: 'https://open.spotify.com',
       },
       {
-        hues: ['90'],
-        key: 'j',
-        name: 'Hypem',
-        search: '/search/{}',
-        url: 'https://hypem.com/latest',
-      },
-      {
         hues: ['45', '40'],
-        key: 'k',
-        name: 'Keep',
-        search: '/u/0/#search/text={}',
-        url: 'https://keep.google.com/u/0',
+        key: 'hg',
+        name: 'Honeygain',
+        url: 'https://dashboard.honeygain.com/',
       },
       {
-        hues: ['36', '26'],
-        key: 'a',
-        name: 'AWS',
-        url: 'https://us-west-2.console.aws.amazon.com/console/home',
-      },
-      {
-        hues: ['32', '22'],
-        key: 'o',
-        name: 'Sounds',
+        hues: ['13', '33'],
+        key: 'p',
+        name: 'Plex',
         search: '/search?q={}',
-        url: 'https://soundcloud.com/discover',
+        url: 'https://app.plex.tv',
       },
       {
         hues: ['13', '33'],
@@ -358,18 +324,6 @@
         name: 'Hunt',
         search: '/search?q={}',
         url: 'https://www.producthunt.com',
-      },
-      {
-        hues: ['4', '24'],
-        key: 'n',
-        name: 'Notion',
-        url: 'https://www.notion.so',
-      },
-      {
-        key: 'u',
-        name: 'Unsplash',
-        search: '/search/{}',
-        url: 'https://unsplash.com/images',
       },
       {
         key: '0',
